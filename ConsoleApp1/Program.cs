@@ -10,6 +10,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Person p = new Person("name");
+            p.Show();
+            Console.ReadKey();
         }
     }
 }
