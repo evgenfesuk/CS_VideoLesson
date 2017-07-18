@@ -17,6 +17,18 @@ namespace ConsoleApp1
             Console.WriteLine(p.Name);
             p.I = 1;
             Console.WriteLine(p.IsPositive);
+
+            p.starString(0);
+            Console.WriteLine();
+            p.starString(1);
+            Console.WriteLine();
+            p.starString(2);
+            Console.WriteLine();
+            p.starString(3);
+            Console.WriteLine();
+            p.starString(4);
+            Console.WriteLine();
+           // Console.WriteLine(System.Math.Pow(2, 0));
             Console.ReadKey();
         }
     }

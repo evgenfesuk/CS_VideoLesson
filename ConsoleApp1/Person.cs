@@ -55,5 +55,14 @@ namespace ConsoleApp1
                 return (i > 0);
             }
         }
-    }
+
+        public void starString(int n)
+        {
+            for(int i=0; i< System.Math.Pow(2, n); i++)
+            {
+                Console.Write('*');
+            }
+            Console.WriteLine(System.Math.Pow(2, n));
+        }
+
 }
