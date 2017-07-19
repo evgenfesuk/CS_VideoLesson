@@ -28,7 +28,10 @@ namespace ConsoleApp1
             Console.WriteLine();
             p.starString(4);
             Console.WriteLine();
-           // Console.WriteLine(System.Math.Pow(2, 0));
+            p.a();
+            ClassB b = new ClassB("nameB");
+            b.a();
+            b.a();
             Console.ReadKey();
         }
     }

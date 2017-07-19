@@ -58,11 +58,16 @@ namespace ConsoleApp1
 
         public void starString(int n)
         {
-            for(int i=0; i< System.Math.Pow(2, n); i++)
+            for (int i = 0; i < System.Math.Pow(2, n); i++)
             {
                 Console.Write('*');
             }
             Console.WriteLine(System.Math.Pow(2, n));
         }
 
+        virtual public void a()
+        {
+            Console.WriteLine('a');
+        }
+    }
 }
