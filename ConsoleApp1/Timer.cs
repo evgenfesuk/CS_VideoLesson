@@ -7,12 +7,13 @@ using System.Threading;
 
 namespace ConsoleApp1
 {
+    /*
     /// <summary>
     /// Какой-то способ вывода на экран результата работы таймера
     /// </summary>
     /// <param name="i">Текущее состояние таймера</param>
     /// <param name="timer">Финальное значение таймера</param>
-    public delegate void ShowDelegate(int i, int timer);
+    public delegate void ShowDelegate(int i, int timer);*/
 
     /// <summary>
     /// Класс Timer
@@ -71,7 +72,7 @@ namespace ConsoleApp1
         /// </summary>
         /// <param name="time">Время в секундах</param>
         /// <param name="show">Один из вариантов вывода на экран</param>
-        public void InitTimer(int time, ShowDelegate show)
+        public void InitTimer(int time, Action<int, int> show)
         {
             for (int i = 1; i <= time; i++)
             {
@@ -83,7 +84,7 @@ namespace ConsoleApp1
         /// Запуск таймера без явного указания времени, но с делегатом вывода на экран
         /// </summary>
         /// <param name="show">Один из вариантов вывода на экран</param>
-        public void InitTimer(ShowDelegate show)
+        public void InitTimer(Action<int, int> show)
         {
             InitTimer(Time, show);
         }

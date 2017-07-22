@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-
+    /*
     /// <summary>
     /// Делегат для работы с проверкой числа на >0, <0, ==0
     /// </summary>
     /// <param name="num">Проверяемое число</param>
     /// <returns></returns>
-    public delegate bool BooleanDelegate(int num);
+    public delegate bool BooleanDelegate(int num);*/
 
 
     /// <summary>

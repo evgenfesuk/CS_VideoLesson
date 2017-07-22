@@ -14,9 +14,9 @@ namespace ConsoleApp1
             WhatKindOfNumber number = new WhatKindOfNumber();
 
             // делегаты для разных проверок
-            BooleanDelegate IsNegative = number.IsNegative;
-            BooleanDelegate IsPositive = number.IsPositive;
-            BooleanDelegate IsZero = number.IsZero;
+            Func<int, bool> IsNegative = number.IsNegative;
+            Func<int, bool> IsPositive = number.IsPositive;
+            Func<int, bool> IsZero = number.IsZero;
 
 
 
@@ -36,7 +36,7 @@ namespace ConsoleApp1
                 Timer time = new Timer(tmpTime);
 
                 // выбираем способ вывода на экран
-                ShowDelegate show = time.ShowNoLine;
+                Action<int, int> show = time.ShowNoLine;
 
                 // запускаем таймер с выбраным способом вывода на экран
                 time.InitTimer(show);
