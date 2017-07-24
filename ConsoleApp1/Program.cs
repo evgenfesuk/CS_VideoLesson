@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+Action возвращает void, Predicate возвращает bool, а Func возвращает указанный результат 
+*/
+
 namespace ConsoleApp1
 {
     class Program
@@ -14,9 +18,10 @@ namespace ConsoleApp1
             WhatKindOfNumber number = new WhatKindOfNumber();
 
             // делегаты для разных проверок
-            Func<int, bool> IsNegative = number.IsNegative;
-            Func<int, bool> IsPositive = number.IsPositive;
-            Func<int, bool> IsZero = number.IsZero;
+            // Predicate<T> — метод, который принимает аргумент типа T и возвращает bool
+            Predicate<int> IsNegative = number.IsNegative;
+            Predicate<int> IsPositive = number.IsPositive;
+            Predicate<int> IsZero = number.IsZero;
 
 
 
