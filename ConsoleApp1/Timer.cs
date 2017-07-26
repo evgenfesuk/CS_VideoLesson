@@ -67,6 +67,23 @@ namespace ConsoleApp1
             Thread.Sleep(1000); // ждём 1 сек
         }
 
+
+        public void Beeper(int i, int timer)
+        {
+            Console.Clear(); // очистка строки
+            Console.WriteLine("Timer for {0} seconds started", timer); // вывод сообщения о величине таймера
+            Console.Beep(); // звуковое оповещение
+            if (i == timer) Console.Beep(800, 1000); // звуковое оповещение по окончании
+            Thread.Sleep(1000); // ждём 1 сек
+        }
+
+
+        public void ShowWindow(int i, int timer)
+        {
+            Form1 f = new Form1();
+            f.Show();
+        }
+
         /// <summary>
         /// Запуск таймера с заданым временем и делегатом вывода на экран
         /// </summary>
